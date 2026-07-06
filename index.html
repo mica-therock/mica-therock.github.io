@@ -8,13 +8,28 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
-    <header>
+  <body id="body">
+    <script>
+      const body = document.getElementById("body")
+      let bgcolorindex = 0
+      function bgcolorchange(){
+        if (bgcolorindex === 0 ){
+          body.style.backgroundImage='url("bg_tile_green.png")'
+          bgcolorindex = 1
+        }
+        else{
+          body.style.backgroundImage='url("bg_tile_purple.png")'
+          bgcolorindex = 0
+        }
+      }
+    </script>
 
+    <header>
+      <button type="button" id="change_color" onclick="bgcolorchange()">Change back-ground</button>
     </header>
 
     <main>
-      <p>can this actually fucking work</p>
+
     </main>
 
     <footer>

@@ -1,4 +1,15 @@
 body {
-    background-image: url("bg_tile.png");
+    background-image: url("bg_tile_purple.png");
     background-repeat: repeat;
+    background-position: center;
+}
+#change_color {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: azure;
+    border-width: 2px;
+    border-color: bisque;
+    
 }
