@@ -25,12 +25,14 @@ main section {
 }
 .Agender {
     color:green;
+    text-decoration: none;
 }
 a.Agender:hover {
     color: darkgreen;
 }
 .Aroace {
     color: orange;
+    text-decoration: none;
 }
 a.Aroace:hover {
     color: darkorange;
