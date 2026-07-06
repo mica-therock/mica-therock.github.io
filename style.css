@@ -5,11 +5,43 @@ body {
 }
 #change_color {
     display: block;
-    width: 60px;
-    height: 60px;
     margin: 0 auto;
+    padding: 20px;
     background-color: azure;
     border-width: 2px;
     border-color: bisque;
     
+}
+main section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+    border: 10px solid palevioletred;
+    padding: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+.Agender {
+    color:green;
+}
+a.Agender:hover {
+    color: darkgreen;
+}
+.Aroace {
+    color: orange;
+}
+a.Aroace:hover {
+    color: darkorange;
+}
+#aroace_flag {
+    position: relative;
+    width: 30%;
+}
+
+#agender_flag{
+    position: relative;
+    width: 30%;
+
 }
