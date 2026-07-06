@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-image: url("bg_tile_purple.png");
     background-repeat: repeat;
     background-position: center;
+    font-family: 'Space Mono', monospace, inter, sans-serif;
+}
+#navigation a {
+    color:white;
+}
+#navigation a:hover {
+    color: lightgray;
 }
 #change_color {
     display: block;
@@ -10,9 +21,10 @@ body {
     background-color: azure;
     border-width: 2px;
     border-color: bisque;
+    cursor: pointer;
     
 }
-main section {
+section.section {
     width: 80%;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.7);
@@ -45,4 +57,38 @@ a.Aroace:hover {
 #agender_flag{
     position: relative;
     width: 30%;
+}
+#panel {
+    position: fixed;
+    z-index: 100;
+    width: 30%;
+    top: 20px;
+    left: 20px;
+}
+#sideMenu {
+    display: none;
+}
+#panel.open #sideMenu {
+    display: block;
+    border: 5px solid mediumorchid;
+    background-color: mediumslateblue;
+    margin: 15px;
+    padding: 10px;
+}
+#menuButton {
+    width: 9%;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+#interestsLists {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+div.interestBox {
+    width: 45%;
+    padding: 20px;
+    border: 3px dashed palevioletred;
 }

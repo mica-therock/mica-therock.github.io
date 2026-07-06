@@ -1,10 +1,15 @@
 # mica-therock.github.io
 
 ## TODO LIST
-- [x] Simple about me (name, age, pronouns)
+
 - [ ] Interests
-- [ ] Undiagnosed conditions ? (crying emoji)
-- [ ] Expanded identity about me
 - [ ] Favorite movies, songs, games
+- [ ] How my brain works
 - [ ] Puppy section
+- [ ] Gallery
+- [ ] Contacts
+
+- [x] Simple about me (name, age, pronouns)
+- [x] Expand about me
 - [x] Cool little button that changes the color of the background
+- [x] Cool little button that opens up menu of navigation and features
