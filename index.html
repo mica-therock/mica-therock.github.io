@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mica.TheRock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       <button type="button" id="menuButton">≡</button>
       <div id="sideMenu">
         <hr>
-        <button type="button" id="change_color" onclick="bgColorChange()">Change background :D</button>
+        <button type="button" id="changeColor">Change background :D</button> <!--remember the function thing-->
         <hr>
         <div id="navigation">
           <a href="#about">About me</a>
@@ -62,52 +63,10 @@
 
     <script>
       const body = document.body
-      const colorButton = document.getElementById("change_color")
-      const sections = document.querySelectorAll(".section")
-      const panel = document.getElementById("panel")
-      const menuButton = document.getElementById("menuButton")
-      const sideMenu = document.getElementById("sideMenu")
-      const interestBoxes = document.querySelectorAll(".interestBox")
-      let bgColorIndex = 0
-      let currentHoverColor = 'aquamarine'
-      function bgColorChange(){
-        if (bgColorIndex === 0 ){
-          body.style.backgroundImage='url("bg_tile_green.png")'
-          currentHoverColor = 'blueviolet'
-          sections.forEach(section => {
-            section.style.borderColor='paleturquoise'
-          });
-          sideMenu.style.backgroundColor='mediumseagreen'
-          sideMenu.style.borderColor='green'
-          interestBoxes.forEach(interestBox => {
-            interestBox.style.borderColor='paleturquoise'
-          });
-          bgColorIndex = 1
-        }
-        else{
-          body.style.backgroundImage='url("bg_tile_purple.png")'
-          currentHoverColor = "aquamarine"
-          sections.forEach(section => {
-            section.style.borderColor='palevioletred'
-          });
-          sideMenu.style.backgroundColor='mediumslateblue'
-          sideMenu.style.borderColor='mediumorchid'
-          interestBoxes.forEach(interestBox => {
-            interestBox.style.borderColor='palevioletred'
-          });
-          bgColorIndex = 0
-        }
-        colorButton.style.backgroundColor = currentHoverColor
-        
-        }
-        colorButton.onmouseenter = function() {
-          colorButton.style.backgroundColor = currentHoverColor
-        }
-        colorButton.onmouseleave = function() {
-          colorButton.style.backgroundColor = ''
-        }
-
-        
+      const colorButton = document.getElementById("changeColor")
+      colorButton.onclick = function(){
+        body.classList.toggle("greenTheme")
+      }
         menuButton.onclick = function(){
           panel.classList.toggle("open");
         }

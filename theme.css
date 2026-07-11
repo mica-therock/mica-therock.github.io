@@ -1,0 +1,13 @@
+body.greenTheme {
+    background-image: url("bg_tile_green.png");
+}
+body.greenTheme div.interestBox {
+    border-color: paleturquoise;
+}
+body.greenTheme #panel #sideMenu {
+    background-color: mediumseagreen;
+    border-color: green;
+}
+body.greenTheme section {
+    border-color: paleturquoise;
+}
