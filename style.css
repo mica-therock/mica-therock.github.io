@@ -81,6 +81,9 @@ a.Aroace:hover {
     cursor: pointer;
     font-size: 30px;
 }
+#changeColor:hover {
+    background-color: aquamarine;
+}
 #interestsLists {
     display:flex;
     flex-wrap: wrap;
@@ -92,7 +95,12 @@ div.interestBox {
     padding: 20px;
     border: 3px dashed palevioletred;
 }
-
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
 
 
 
@@ -108,21 +116,22 @@ div.interestBox {
 
 
 @media (max-width: 700px){
-
     h1{
         font-size: 40px;
     }
-
     p{
         font-size: 22px;
     }
-
+    div.interestBox {
+        font-size: 22px;
+        width: 85%;
+        padding: 0px;
+        margin: auto;
+    }
     #panel{
         width: 50%;
     }
-
     #menuButton{
         width: 45px;
     }
-
 }

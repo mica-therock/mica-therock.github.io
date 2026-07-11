@@ -11,3 +11,6 @@ body.greenTheme #panel #sideMenu {
 body.greenTheme section {
     border-color: paleturquoise;
 }
+body.greenTheme #changeColor:hover {
+    background-color: blueviolet;
+}
