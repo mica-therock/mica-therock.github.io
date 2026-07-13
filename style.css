@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url("bg_tile_purple.png");
+    background-image: url("images/bgPurple.png");
     background-repeat: repeat;
     background-position: center;
     font-family: 'Space Mono', monospace, inter, sans-serif;
@@ -101,10 +101,17 @@ ul {
     padding: 0px;
     margin: 0px;
 }
-
-
-
-
+#linksBox {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+.linkImage:hover {
+    box-shadow: 5px 5px white;
+    transition: 0.2s;
+    border-radius: 60px;
+    transform: scale(1.1)
+}
 
 
 
@@ -133,5 +140,8 @@ ul {
     }
     #menuButton{
         width: 45px;
+    }
+    #linksBox{
+        flex-wrap: wrap;
     }
 }

@@ -1,5 +1,5 @@
 body.greenTheme {
-    background-image: url("bg_tile_green.png");
+    background-image: url("images/bgGreen.png");
 }
 body.greenTheme div.interestBox {
     border-color: paleturquoise;
