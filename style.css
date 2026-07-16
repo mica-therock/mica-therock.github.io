@@ -35,12 +35,12 @@ section.section {
     font-size: xx-large;
     text-align: center;
 }
-.Agender {
-    color:green;
+.Trans {
+    color:pink;
     text-decoration: none;
 }
-a.Agender:hover {
-    color: darkgreen;
+a.Trans:hover {
+    color: plum;
 }
 .Aroace {
     color: orange;
@@ -49,14 +49,10 @@ a.Agender:hover {
 a.Aroace:hover {
     color: darkorange;
 }
-#aroaceFlag {
+#transFlag, #aroaceFlag {
     position: relative;
     width: 30%;
-}
-
-#agenderFlag{
-    position: relative;
-    width: 30%;
+    box-shadow: 5px 5px gray;
 }
 #panel {
     position: fixed;
