@@ -25,7 +25,7 @@ body {
     
 }
 section.section {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.7);
     border: 10px solid palevioletred;
@@ -63,6 +63,7 @@ a.Aroace:hover {
 }
 #sideMenu {
     display: none;
+    width: 65%
 }
 #panel.open #sideMenu {
     display: block;
@@ -83,13 +84,16 @@ a.Aroace:hover {
 #interestsLists {
     display:flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     justify-content: space-between;
 }
 div.interestBox {
     width: 45%;
-    padding: 20px;
+    padding: 5px;
     border: 3px dashed palevioletred;
+}
+div #musicBox li {
+    font-size: smaller
 }
 ul {
     list-style-type: none;
@@ -119,6 +123,9 @@ ul {
 
 
 @media (max-width: 700px){
+    section.section {
+        width: 80%;
+    }
     h1{
         font-size: 40px;
     }
