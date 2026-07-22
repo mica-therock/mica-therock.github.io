@@ -35,24 +35,31 @@ section.section {
     font-size: xx-large;
     text-align: center;
 }
-.Trans {
+a.Trans {
     color:pink;
     text-decoration: none;
 }
 a.Trans:hover {
     color: plum;
 }
-.Aroace {
-    color: orange;
+a.Lesbian {
+    color: salmon;
+    text-decoration: none;
+}
+a.Lesbian:hover {
+    color: sandybrown
+}
+a.Aroace {
+    color: skyblue;
     text-decoration: none;
 }
 a.Aroace:hover {
-    color: darkorange;
+    color: deepskyblue;
 }
-#transFlag, #aroaceFlag {
+#TransLesbianAroace {
     position: relative;
-    width: 30%;
-    box-shadow: 5px 5px gray;
+    width: 70%;
+    box-shadow: 5px 5px rgba(255,255,255,0.2);
 }
 #panel {
     position: fixed;
